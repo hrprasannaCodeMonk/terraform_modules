@@ -9,8 +9,8 @@ resource "aws_security_group" "allow_tls" {
     from_port        = 443
     to_port          = 443
     protocol         = "tcp"
-    cidr_blocks      = [data.aws_vpc.myvpc.cidr_block]
-    #ipv6_cidr_blocks = [data.aws_vpc.myvpc.ipv6_cidr_block]
+    cidr_blocks      = [data.aws_vpc.selected.cidr_block]
+    #ipv6_cidr_blocks = [data.aws_vpc.selected.ipv6_cidr_block]
   }
 
   egress {
