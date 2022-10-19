@@ -13,7 +13,7 @@ data "aws_ami" "ubuntu" {
   }
 }
 
-data "aws_vpc" "selected" {
+data "aws_vpc" "myvpc" {
   id = var.vpc_id
 }
 
