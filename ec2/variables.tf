@@ -1,7 +1,7 @@
 #VPC
 variable "vpc_id" {
   type        = string
-  default     = "vpc-0c868a4220cf1d1d69"
+  default     = "vpc-052a14198e1d93fcc"
 }
 
 variable "instance_type" {
